@@ -255,10 +255,21 @@ body {
 	
 	<div align="center">
     <form action="https://google.com/search">
-      Enter your search words: <input type="text" name="q"><br><br>
-      <input type="submit" name="btnG" value="Google Search">
+      Enter your search words: <input type="text"><br><br>
     </form>
     </div>
-	      
+	<script type="text/javascript">
+    function addText() {
+        var input = document.getElementById('something');
+        input.value = input.value +' across the street';
+    }
+</script>
+
+<form name="frm1" action="?" onsubmit="addText()">
+    <input type="text" name="something" id="something" />
+    <input type="submit" value="Submit" />
+</form>
+	
+	
  </body>
  </html>

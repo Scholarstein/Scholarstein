@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Scholarstein</title>
+<link rel='shortcut icon' href = "https://user-images.githubusercontent.com/76495035/104830188-f1561080-5841-11eb-8c5e-f5c4c631ec47.PNG" type = "image/png">    
+<style>
+body {
+  margin: 0;
+}
+
+.container {
+  position: relative;
+}
+
+.text-block {
+  position: absolute;
+  top: 30px;
+  left: 250px;
+  right: 650px;
+}
+
+.text-block-data {
+  position: absolute;
+  top: 60px;
+  left: 250px;
+  right: 250px;
+}
+	
+.topnav {
+  overflow: hidden;
+  background-color: #ff7f7f;
+  font-family: oswald;
+}
+
+.topnav a {
+  float: right;
+  color: black;
+  padding: 20px 20px;
+  text-decoration: none;
+  font-size: 24px;
+    font-family: oswald;
+}
+
+.topnav a:hover {
+  background-color: #ffcccb;
+  color: black;
+    font-family: oswald;
+}
+
+
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a href="findcontests.html">Find Contests</a>
+  <a href="findclassesonlinematerial.html">Find Classes/Online Material</a>
+  <a href="index.html">Home</a>
+  
+</div>
+	
+<div class="container">
+        <img src="https://user-images.githubusercontent.com/76495035/111847972-fb46cf00-88d7-11eb-80f4-84c85b7c4cb4.jpg" style="width:100%;" height = 600;>
+        <div class="text-block"> 
+	<img src="https://user-images.githubusercontent.com/76495035/104830188-f1561080-5841-11eb-8c5e-f5c4c631ec47.PNG" height = 70;>
+	<h1 style = "font-size:50px; font-family:oswald;">Find Music Classes</h1>
+	<p style = "font-family:roboto; font-size: 26px;">Find K-12 Music Classes ALL IN ONE PLACE!</p>
+	<a href = "#searchdirectory" style = "border: none; color:white; padding: 10px;  text-align: center; font-family:oswald; text-decoration: none; font-size:24px; background-color: #ff7f7f;" class = "button">Search Directory</a>
+	<a href = "#searchbylocation" style = "border: none; color:white; padding: 10px;  text-align: center; font-family:oswald; text-decoration: none; font-size:24px; background-color: #ff7f7f;" class = "button">Search By Location</a>
+</div></div>
+<br><br>
+	<h1 id = "searchdirectory" style = "font-size:40px; font-family:oswald;padding:20px;background-color:#ff7f7f;opacity:.5;color:black">Search Directory</h1>
+      <table style = "width:75%; margin-left: auto; margin-right: auto;" cellspacing="10px" cellpadding = "10px">
+        <tr>
+          <td style = "border: 8px solid #ff7f7f;background-color:#E8E8E8;">
+          <img src="data:image/png;base64,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" width:auto; height = "40";>
+          <h1 style = "font-family:oswald">Music Together</h1>
+          <h1 style = "font-family:oswald;color:#000000;">------------------------------</h1>
+          <a href = "https://www.musictogether.com/" style = "font-size:24px;font-family:courier;">Visit Here</a><br> 
+          <p style = "font-size:18px;font-family:oswald;">Our mission is to make the world a better place by making it more musical. We do this by providing the highest-quality music and movement classes to families everywhere—and by involving parents and caregivers.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style = "border: 8px solid #ff7f7f;background-color:#E8E8E8;">
+          <img src="https://media.kindermusik.com/assets/images/theme/kindermusik-web-logo.png" width:auto; height = "40";>
+          <h1 style = "font-family:oswald">Kindermusic</h1>
+          <h1 style = "font-family:oswald;color:#000000;">------------------------------</h1>
+          <a href = "https://www.kindermusik.com/" style = "font-size:24px;font-family:courier;">Visit Here</a><br> 
+          <p style = "font-size:18px;font-family:oswald;">e provide families with a useful way to be involved in their children's educations and expose them to various types of media and arts. This helps Kindermusik reach our mission of instilling a lifelong love of music and learning in children around the world.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style = "border: 8px solid #ff7f7f;background-color:#E8E8E8;">
+          <img src="data:image/jpeg;base64,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" width:auto; height = "40";>
+          <h1 style = "font-family:oswald">Children's Music Academy</h1>
+          <h1 style = "font-family:oswald;color:#000000;">------------------------------</h1>
+          <a href = "https://childrensmusicacademy.org/" style = "font-size:24px;font-family:courier;">Visit Here</a><br> 
+          <p style = "font-size:18px;font-family:oswald;">Music Lasts a Lifetime We specialize in teaching music to children in a fun, positive, non-pressured and lively classroom setting.</p>
+          </td>
+        </tr>
+        <tr>
+          <td style = "border: 8px solid #ff7f7f;background-color:#E8E8E8;">
+          <img src="https://process.fs.teachablecdn.com/ADNupMnWyR7kCWRvm76Laz/resize=height:60/https://www.filepicker.io/api/file/dPZ5i18RLuJW70KW1E0H" width:auto; height = "40";>
+          <h1 style = "font-family:oswald">All Around This World's Global Music</h1>
+          <h1 style = "font-family:oswald;color:#000000;">------------------------------</h1>
+          <a href = "https://allaroundthisworld.teachable.com/" style = "font-size:24px;font-family:courier;">Visit Here</a><br> 
+          <p style = "font-size:18px;font-family:oswald;">All Around This World's classes inspire young children and their grown-ups to sing, dance, learn music from everywhere and have SO MUCH FUN</p>
+          </td>
+        </tr>
+        <tr>
+          <td style = "border: 8px solid #ff7f7f;background-color:#E8E8E8;">
+          <img src="https://themusicclass.com/themes/custom/tmc_theme/images/logo.gif" width:auto; height = "40";>
+          <h1 style = "font-family:oswald">The Music Class</h1>
+          <h1 style = "font-family:oswald;color:#000000;">------------------------------</h1>
+          <a href = "https://themusicclass.com/interactive-classes" style = "font-size:24px;font-family:courier;">Visit Here</a><br> 
+          <p style = "font-size:18px;font-family:oswald;">The Music Class offers research-based educational programs with the goal of helping parents and teachers to enhance their child’s music development during the critical first years of life. While our focus has always been on music development, our programs also foster social and intellectual development. </p>
+          </td>
+        </tr>
+        <tr>
+          <td style = "border: 8px solid #ff7f7f;background-color:#E8E8E8;">
+          <img src="https://www.k12courses.com/skin/frontend/smartwave/porto/images/logo/K12Logo_172x66.png" width:auto; height = "25";>
+          <h1 style = "font-family:oswald">K12 Courses</h1>
+          <h1 style = "font-family:oswald;color:#000000;">------------------------------</h1>
+          <a href = "https://www.k12courses.com/subject/world-language.html" style = "font-size:24px;font-family:courier;">Visit Here</a><br>
+          <p style = "font-size:18px;font-family:oswald;">Our mission is what drives us to be better and do better for students and families everywhere.</p>
+          </td>
+        </tr>
+      </table> 
+<h1 id = "searchbylocation" style = "font-size:40px; font-family:oswald;padding:20px;background-color:#ff7f7f;opacity:.5;color:black">Search By Location</h1>
+	
+	<p style = "font-family:roboto; font-size: 26px;" align = center >Search for the <br> The Best Music Tutors and Classes in [Area of Residence]</p>
+	<script async src="https://cse.google.com/cse.js?cx=7c335fe561abe4ac4"></script>
+	<div class="gcse-search"></div>
+	<img src="https://user-images.githubusercontent.com/76495035/111837542-0d1f7680-88c6-11eb-8e48-792075dd1775.jpeg" style = "width:100%;" height=200>
+
+ </body>
+ </html>

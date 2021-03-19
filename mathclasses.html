@@ -253,17 +253,16 @@ body {
         </tr>
       </table> 
 	
-<script type="text/javascript">
-    function addText() {
-        var input = document.getElementById('something');
-        input.value = 'best math classes and tutors in" + input.value;
-    }
-</script>
-
-<form name="frm1" action ="https://google.com/search" onsubmit="addText()">
-    <input type="text" name="something" id="something" />
-    <input type="submit" value="Submit" />
+<form method='get' action='https://www.google.com/search'>
+Enter a zip code<br/><br/>
+<input type='text' name='search' value=''/>
+<input type='submit' value='Search'/>
 </form>
+<script>
+function getURLParameter(name)
+	{return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,''])[1].replace(/\+/g, '%20'))||null}
+var spm=getURLParameter('search');if(spm!=null){var ifms=document.getElementsByTagName('iframe');for(var ii=0;ii<ifms.length;ii++){var ifm=ifms[ii];if(ifm.getAttribute('src').indexOf('google.com')!=-1)ifm.setAttribute('src',ifm.getAttribute('src')+'&search='+spm);}}
+</script>
 	
 	
  </body>

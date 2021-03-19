@@ -253,16 +253,19 @@ body {
         </tr>
       </table> 
 	
-<form method='get' action='https://www.google.com/search'>
-Enter a zip code<br/><br/>
-<input type='text' name='search' value=''/>
-<input type='submit' value='Search'/>
-</form>
-<script>
-function getURLParameter(name)
-	{return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,''])[1].replace(/\+/g, '%20'))||null}
-var spm=getURLParameter('search');if(spm!=null){var ifms=document.getElementsByTagName('iframe');for(var ii=0;ii<ifms.length;ii++){var ifm=ifms[ii];if(ifm.getAttribute('src').indexOf('google.com')!=-1)ifm.setAttribute('src',ifm.getAttribute('src')+'&search='+spm);}}
+<script type="text/javascript">
+
+function google_search()
+{
+window.location = "http://www.google.com/search?q=site:www.google.com+" + encodeURIComponent(document.getElementById("q").value);
+}
+
 </script>
+
+<form onSubmit="google_search()">
+<input type="text" name="q" id="q" value="" />
+<input type="submit" value="search" onClick="return google_search()" />
+</form>
 	
 	
  </body>

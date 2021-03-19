@@ -253,19 +253,14 @@ body {
         </tr>
       </table> 
 	
-	<div align="center">
-    <form action="https://google.com/search">
-      Enter your search words: <input type="text"><br><br>
-    </form>
-    </div>
-	<script type="text/javascript">
+<script type="text/javascript">
     function addText() {
         var input = document.getElementById('something');
-        input.value = input.value +' across the street';
+        input.value = 'best math classes and tutors in" + input.value;
     }
 </script>
 
-<form name="frm1" action="?" onsubmit="addText()">
+<form name="frm1" action ="https://google.com/search" onsubmit="addText()">
     <input type="text" name="something" id="something" />
     <input type="submit" value="Submit" />
 </form>
